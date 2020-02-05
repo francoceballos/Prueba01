@@ -1,0 +1,76 @@
+Actualizar el sistema:
+sudo apt-get update
+sudo apt-get upgrade
+
+
+Instalación por completo del idioma:
+
+
+Las "fuentes" de Microsoft:
+sudo apt-get install ttf-mscorefonts-installer
+sudo fc-cache
+
+Navegador:
+sudo apt-get install chromium-browser
+sudo apt-get install chromium-browser-l10n
+
+Codecs:
+sudo apt-get install ubuntu-restricted-extras libavcodec-extra libdvd-pkg
+
+Flash: 
+sudo apt-get install flashplugin-installer
+
+Gestores de paquetes Synatic:
+sudo apt-get install synaptic
+
+Gdebi:
+sudo apt-get install gdebi
+
+Instalar aplicaciones de compresión: 
+sudo apt-get install rar unace p7zip p7zip-full p7zip-rar unrar lzip lhasa arj sharutils mpack lzma lzop
+
+
+
+
+
+instalación de Gnome Tweak tool:
+sudo apt install gnome-tweak-tool
+
+
+sudo apt-get install lm-sensors
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+sudo add-apt-repository ppa:linrunner/tlp
+sudo apt-get update 
+sudo apt-get install tlp tlp-rdw
+sudo tlp start
+sudo tlp-stat -s
+
+
+# systemd-analyze
+# systemd-analyze blame
+# systemctl disable NOMBRE_DE_SERVICIO
+
+
+NetworkManager-wait-online.service   //prueba
+systemctl disable NetworkManager-wait-online.service
+
+sudo systemctl disable snapd.service
+sudo systemctl mask snapd.service		//Esto básicamente hace que el archivo de servicio sea nulo, de modo que las aplicaciones no tienen forma de iniciar el servicio.
+
+
+
+sudo systemctl disable bluetooth.service | sudo systemctl mask bluetooth.service
+
+----------------------------------------------------------------------------------------------------------------------
+
+https://www.guia-ubuntu.com/index.php/Servicios_no_necesarios
+https://maslinux.es/hacer-que-el-arranque-de-gnu-linux-sea-mas-rapido-al-deshabilitar-servicios-innecesarios/
+https://maslinux.es/como-deshabilitar-snap/
+
+
+
+
+
