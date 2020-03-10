@@ -118,3 +118,22 @@ long_timers = {
 }
 
 print(long_timers)
+
+
+#Función zip, combina en tuplas los elementos de 2 o más vectores(listas o tuplas).
+#La función zip debe ir acompañada de la conversión a tipo de dato que se quiere (list, dict)
+#Siempre combina con la cantidad de datos(indices) de la menor lista. 
+
+# While that is extremely useful when we have conditionals, sometimes we
+# just want to create a dictionary out of two lists or tuples.
+# That's when `zip` comes in handy!
+
+friends = ["Rolf", "Bob", "Jen", "Anne"]
+time_since_seen = [3, 7, 15, 11]
+
+# Remember how we can turn a list of lists or tuples into a dictionary?
+# `zip(friends, time_since_seen)` returns something like [("Rolf", 3), ("Bob", 7)...]
+# We then use `dict()` on that to get a dictionary.
+
+friends_last_seen = dict(zip(friends, time_since_seen))
+print(friends_last_seen)
