@@ -22,7 +22,9 @@ ser.isOpen()
 
 print ('Enter your commands below.\r\nInsert "exit" to leave the application.')
 
-inputcmb="AT\r\n"
+#setenv bootargs root=/dev/ram0 initrd=0xA0408000,4096K console=ttyS0,115200N8 
+
+inputcmb="\r\n"
 while 1 :
     
     # get keyboard input
