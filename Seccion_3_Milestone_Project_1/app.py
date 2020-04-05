@@ -49,6 +49,9 @@ def find_movie():
 
     print("\n")
 
+#Se podria hacer una unica función para imprimir los datos de algun modo particular.
+#Así se usaria tal funcion en varios lugares
+
 # And another function here for the user menu
 selection = input(MENU_PROMPT)
 while selection != 'q':
@@ -64,4 +67,25 @@ while selection != 'q':
     selection = input(MENU_PROMPT)
 
 
-# Remember to run the user menu function at the end!
+
+#--- Otra forma de hacer menu --
+#diccionario con oppciones - donde cada clave: valor es opcion: funcion
+user_options = {
+    "a": add_movie,
+    "l": list_movie,
+    "f": find_movie
+}
+
+def menu():
+    selection = input(MENU_PROMPT)
+    while selection != 'q':
+        if selection in user_options:
+            selected_function = user_options[selection] #hace una variable igual a una funcion
+            selected_function()                         #llama a la funcion con los parentesis 
+        else:
+            print('Unknown command. Please try again.')
+
+        selection = input(MENU_PROMPT)
+
+menu()
+
