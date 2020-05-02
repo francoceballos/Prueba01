@@ -3,3 +3,11 @@ Links a wiki de python en Español.
 http://docs.python.org.ar/tutorial/3/index.html
 
 https://entrenamiento-python-basico.readthedocs.io/es/latest/index.html
+
+https://www.w3schools.com/python/python_ref_functions.asp
+
+
+
+
+
+https://mapecode.com/ ---> Ejemplos!!
