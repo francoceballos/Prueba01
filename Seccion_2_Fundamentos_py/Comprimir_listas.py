@@ -49,7 +49,7 @@ if friend.lower() in friends_lower:
 friends_upper = friend.upper()   #Método que transforma en mayusculas todas las letras de un string
 print(friends_upper)
 
-friends_title = friend.title()	#Método que trcapitalizeansforma cada primer letra de una cadena string
+friends_title = friend.title()	#Método que transforma cada primer letra de una cadena string
 print(friends_title)
 
 
