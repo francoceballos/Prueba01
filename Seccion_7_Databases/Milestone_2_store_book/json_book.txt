@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Martin Fierro",
+        "author": "Jase Hernandez",
+        "read": false
+    },
+    {
+        "name": "La Sociedad Complice",
+        "author": "Luis Espert",
+        "read": false
+    },
+    {
+        "name": "El Football",
+        "author": "Eduardo Galeano",
+        "read": false
+    }
+]

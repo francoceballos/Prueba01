@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Martin Fierro",
+        "author": "Jose Hernandez",
+        "read": true
+    },
+    {
+        "name": "Bar Del Infierno",
+        "author": "Alejandro Dolina",
+        "read": false
+    }
+]

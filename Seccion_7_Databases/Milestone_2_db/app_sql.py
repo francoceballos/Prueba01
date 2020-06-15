@@ -1,5 +1,5 @@
-#from utils import database
-from utils import databasefile
+
+from utils import database
 
 #Definición de string de opciones
 MENU_PROMPT = """\nBook storage directory application.\nEnter one option:\r
@@ -13,29 +13,24 @@ Your Choice: """
 
 
 def prompt_add_book():
-    name = input("\nEnter the book Name-Title: ")
+    name = input("\nEnter the book Title: ")
     author = input("Enter the book author: ")
 
-    #database.add_book(name, author)
-    databasefile.add_book(name, author)
+    database.add_book(name, author)
 
 
 def list_books():
-    databasefile.list_total_books()
+    database.list_total_books()
 
 
 def prompt_read_book():
-    #database.list_name_books()
-    name_read = input("\nEnter the book name to mark as read: ")
-    #database.book_read(name_read)
-    databasefile.book_read(name_read)
+    name_read = input("\nEnter the book title to mark as read: ")
+    database.book_read(name_read)
 
 
 def prompt_delete_book():
-    #database.list_name_books()
     name_delete = input("\nEnter the book name to delete: ")
-    #database.book_delete(name_delete)
-    databasefile.book_delete(name_delete)
+    database.book_delete(name_delete)
 
 
 #diccionario con oppciones - donde cada clave: valor es opcion: funcion

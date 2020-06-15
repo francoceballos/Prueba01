@@ -1,0 +1,3 @@
+Name,Author,Read
+La Sociedad Complice,Luis Espert,YES
+Historias De Football,Eduardo Galeano,NO
